@@ -102,111 +102,121 @@
     </header>
     <main>
         <section class="section is-medium has-background-light">
-    <div class="container">
-        <h1 class="title has-text-centered">Часто задаваемые вопросы (FAQ)</h1>
-        <p class="subtitle has-text-centered mb-6">
-            Общие вопросы (Регистрация и безопасность)
-        </p>
-        <div class="columns is-multiline">
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Что такое CS TRADES?</h4>
-                            <p>Это торговая площадка, где игроки могут безопасно покупать, продавать и обменивать скины CS 2. Мы выступаем гарантом сделки</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Как зарегистрироваться?</h4>
-                            <p>Для регистрации используется ваш аккаунт Steam (OAuth). Это самый безопасный способ, так как нам не нужен ваш пароль от Steam. Мы получаем только базовую информацию (Steam ID, аватар, никнейм).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Безопасно ли давать доступ к моему аккаунту Steam?</h4>
-                            <p>Мы никогда не запрашиваем ваш логин и пароль. Вход осуществляется через официальный протокол Steam. Мы просим только подтвердить вход, и нам не нужны ваши сохраненные данные. Важно: Никому не сообщайте коды подтверждения из Steam Guard и не вводите данные от аккаунта на сторонних сайтах.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Что такое Trade URL и зачем он нужен?</h4>
-                            <p>Trade URL — это ваша уникальная ссылка для обмена. Она нужна нам, чтобы бот сайта мог отправить вам предложение обмена с купленным скином или забрать у вас скин на продажу. Вы можете найти его в настройках инвентаря Steam (Настройки -> Обмены -> Ссылка на обмен).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container is-max-desktop ">
+    <h1 class="title is-3 has-text-centered mb-6">Часто задаваемые вопросы (FAQ)</h1>
 
+    <div class="box">
+      <h2 class="title is-4 mb-4">Общие вопросы (Регистрация и безопасность)</h2>
+
+      <details class="mb-3 ">
+        <summary class="has-text-weight-semibold">
+          Что такое CS TRADES?
+        </summary>
+        <div class="content mt-3">
+          <p>
+            Это торговая площадка, где игроки могут безопасно покупать, продавать 
+            и обменивать скины CS 2. Мы выступаем гарантом сделки.
+          </p>
         </div>
+      </details>
+
+      <details class="mb-3">
+        <summary class="has-text-weight-semibold">
+          Как зарегистрироваться?
+        </summary>
+        <div class="content mt-3">
+          <p>
+            Для регистрации используется ваш аккаунт Steam (OAuth). Это самый безопасный способ,
+            так как нам не нужен ваш пароль. Мы получаем только базовую информацию 
+            (Steam ID, аватар, никнейм).
+          </p>
+        </div>
+      </details>
+
+      <details class="mb-3">
+        <summary class="has-text-weight-semibold">
+          Безопасно ли давать доступ к аккаунту Steam?
+        </summary>
+        <div class="content mt-3">
+          <p>
+            Мы никогда не запрашиваем ваш логин и пароль. Вход осуществляется через официальный
+            протокол Steam. Никому не сообщайте коды подтверждения Steam Guard и не вводите данные
+            на сторонних сайтах.
+          </p>
+        </div>
+      </details>
+
+      <details class="mb-5">
+        <summary class="has-text-weight-semibold">
+          Что такое Trade URL и зачем он нужен?
+        </summary>
+        <div class="content mt-3">
+          <p>
+            Trade URL — это уникальная ссылка для обмена. Она нужна, чтобы бот сайта мог
+            отправить вам предложение обмена с купленным скином или забрать скин на продажу.
+            Найти её можно в Steam: Настройки → Обмены → Ссылка на обмен.
+          </p>
+        </div>
+      </details>
+      <h2 class="title is-4 mb-4">Пополнение баланса и выплаты</h2>
+
+      <details class="mb-3">
+        <summary class="has-text-weight-semibold">
+          Как пополнить баланс (депозит)?
+        </summary>
+        <div class="content mt-3">
+          <p>Вы можете пополнить баланс двумя способами:</p>
+          <ul>
+            <li><strong>Продажа скинов</strong> — после покупки деньги поступают на баланс.</li>
+            <li><strong>Через платежные системы</strong> — банковские карты, электронные кошельки, криптовалюта.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="mb-3">
+        <summary class="has-text-weight-semibold">
+          Как вывести деньги?
+        </summary>
+        <div class="content mt-3">
+          <p>
+            Вывод возможен на банковскую карту, электронный кошелек или через гаранта P2P.
+            Минимальная сумма — 10 рублей. Обработка заявки моментальная.
+          </p>
+        </div>
+      </details>
+
+      <details class="mb-3">
+        <summary class="has-text-weight-semibold">
+          Есть ли комиссия за вывод?
+        </summary>
+        <div class="content mt-3">
+          <p>
+            Комиссия составляет 2% от суммы. Она покрывает расходы платежных систем.
+            При покупке скинов комиссия обычно отсутствует.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary class="has-text-weight-semibold">
+          Как я получу купленный скин?
+        </summary>
+        <div class="content mt-3">
+          <p>
+            После оплаты бот отправит вам предложение обмена в Steam.
+            Нужно принять его в клиенте или браузерной версии Steam —
+            скин мгновенно появится в инвентаре.
+          </p>
+        </div>
+      </details>
+
     </div>
+  </div>
 </section>
-      <section class="section is-little has-background-light">
-    <div class="container">
-        <p class="subtitle has-text-centered mb-6">
-            Пополнение баланса и выплаты
-        </p>
-        <div class="columns is-multiline">
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Как пополнить баланс (депозит)?</h4>
-                            <p>Вы можете пополнить внутренний счет сайта двумя способами:
 
-Продажа скинов: Выставляете скин на продажу, после его покупки деньги поступают на ваш баланс.
-Через платежные системы: Мы принимаем банковские карты (Visa/Mastercard/Мир), электронные кошельки и криптовалюту (уточните список для вашего региона).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Как мне вывести деньги?</h4>
-                            <p>Вы можете заказать вывод средств на банковскую карту, электронный кошелек или через гаранта в P2P-сделке. Минимальная сумма вывода составляет 10 рублей. Обработка заявки моментальная.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Есть ли комиссия за вывод?</h4>
-                            <p>Да, комиссия за вывод средств составляет 2% от суммы. Комиссия покрывает издержки платежных систем. Комиссия за вывод на внутренний баланс Steam (покупку скинов) обычно отсутствует.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <h4 class="title is-5">Как я получу купленный скин?</h4>
-                            <p>Сразу после оплаты с вашего баланса, наш бот отправит вам предложение о обмене в Steam. Вам нужно зайти в клиент Steam (или браузерную версию) и принять предложение. Скин мгновенно окажется в вашем инвентаре.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
     </main>
     <footer>
-         <div class="container">
+         <div class="container pt-6">
     <div class="columns">
       <div class="column">
         <h5 class="title is-4">CS TRADE</h5>
