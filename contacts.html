@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт по продаже и покупке скинов CS2</title>
+    <title>Оставить отзыв</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar is-fixed-top has-background-grey-lighter" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item is-size-5 has-background-light">CS TRADES</a>
+    <a  href="index.html" class="navbar-item is-size-5">CS TRADES</a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -22,7 +22,7 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="#about" class="navbar-item is-size-5">
+      <a href="index.html" class="navbar-item is-size-5">
         О проекте
       </a>
 
@@ -35,7 +35,7 @@
       <a href="404.html" class="navbar-item is-size-5">
         Правила и условия
       </a>
-      <a href="contacts.html" class="navbar-item is-size-5">
+      <a href="contacts.html" class="navbar-item is-size-5 has-background-light">
         Отзывы
       </a>
 
@@ -101,74 +101,70 @@
 </nav>
     </header>
     <main>
-        <section class="hero is-large is-dark">
-        <div class="hero-body has-text-centered">
-        <p class="title is-2 mb-3"> ПРОДАТЬ СКИНЫ CS 2</p>
-        <p class="subtitle is-4">Скины CS 2 за реальные деньги!</p>
-        <button class="button is-large is-light">Получить деньги</button>
-  </div>
-</section>
-    <section class="section is-medium" id="about">
-        <h1 class="title is-2 has-text-centered mb-3">О проекте</h1>
-        <h2 class="subtitle is-4 has-text-centered">
-            <p> Мы создали это пространство для тех, кто живет CS2. Здесь каждый скин - это не просто текстура, а часть твоего стиля и игровой истории. </p>
-            <p>Наша цель - сделать торговлю скинами такой же быстрой и захватывающей, как сам геймплей. Мы объединили удобный каталог, честные цены и моментальный обмен, чтобы ты мог пополнять коллекцию, не отвлекаясь от главного. </p>
-            <p> TRADE - это безопасная площадка, где встречаются игроки со всего СНГ. </p>
-            <p><strong>Покупай, продавай и меняйся</strong> без лишних вопросов и комиссий.</p>
-        </h2>
-    </section>
-    <nav class="level">
-  <div class="level-item has-text-centered ">
-    <div>
-      <p class="heading is-size-4">Сделок</p>
-      <p class="title">10,483</p>
-    </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading is-size-4">Выведено</p>
-      <p class="title">100,375$</p>
-    </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading is-size-4">Пользователей онлайн</p>
-      <p class="title">359</p>
-    </div>
-  </div>
-  <div class="level-item has-text-centered">
-    <div>
-      <p class="heading is-size-4">Скинов</p>
-      <p class="title">789,435</p>
-    </div>
-  </div>
-</nav>
-    <section class="section is-large has-background-grey-light">
-        <h1 class="title  is-2 has-text-centered">Почему мы?</h1>
-        <div class="columns mt-6">
-            <div class="column is-3 has-text-centered is-size-4 has-text-weight-light ">Быстрые сделки
-                <figure class="image is-200x200 mt-6">
-                    <img class="is-rounded" src="icons/pngtree-deal-icon-png-image_1817547.jpg">
-                </figure>
+        <section class="section is-medium has-background-light">
+            <div class="container">
+                <h2 class="title is-2">Свяжитесь с нами, мы поможем!</h2>
+                <div class="columns">
+                    <div class="column is-6">
+                        <form id="feedbackForm">
+                            <div class="field">
+                                <label class="label is-size-4">Имя</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Ваше имя" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label is-size-4">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="example@email.com" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label is-size-4">Тема</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select required>
+                                            <option value="" disabled selected>Выберите тему</option>
+                                            <option>Предложение по сотрудничеству</option>
+                                            <option>Жалоба</option>
+                                            <option>Вопрос</option>
+                                            <option>Благодарность</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label is-size-4">Сообщение</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Ваше сообщение..." rows="5" required></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox is-size-6">
+                                        <input type="checkbox" required> Соглашаюсь на обработку персональных данных
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button  is-dark" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="column is-6">
+                        <div class="content">
+                            <h3 class="title is-4">Контакты</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Москва, пр-т Вернадского 78</p>
+                            <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                            <p><i class="fas fa-envelope"></i> cs@trade.ru</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="column is-3 has-text-centered is-size-4 has-text-weight-light">Выгодные цены
-                <figure class="image is-150x150 mt-6">
-                    <img class="is-rounded" src="icons/pngtree-vector-price-tag-icon-png-image_926111.jpg">
-                </figure>
-            </div>
-            <div class="column is-3 has-text-centered is-size-4 has-text-weight-light">Комиссия сайта 2%
-                <figure class="image is-200x200 mt-6">
-                    <img class="is-rounded" src="icons/commission-icon-element-design-600nw-2668212779.jpg.webp">
-                </figure>
-            </div>
-            <div class="column is-3 has-text-centered is-size-4 has-text-weight-light">Вывод на любые карты
-                <figure class="image is-200x200 mt-6">
-                    <img class="is-rounded" src="icons/bank-cards.jpg">
-                </figure>
-            </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
     <footer>
          <div class="container">
     <div class="columns">
@@ -193,7 +189,7 @@
       <div class="column">
         <h5 class="title is-4">Информация</h5>
         <ul class="menu-list">
-          <li><a class="subtitle is-5" href="about">О проекте</a></li>
+          <li><a class="subtitle is-5" href="index.html">О проекте</a></li>
           <li><a class="subtitle is-5" href="404.html">Правила</a></li>
           <li><a class="subtitle is-5" href="faq.html">FAQ</a></li>
           <li><a class="subtitle is-5" href="contacts.html">Поддержка</a></li>
