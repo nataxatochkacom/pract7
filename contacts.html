@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оставить отзыв</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="scrips" href="scripts/validation.js">
+    <link rel="scripts" href="scripts/consoleLogger.js">
 </head>
 <body>
     <header>
@@ -108,22 +110,28 @@
                     <div class="column is-6">
                         <form id="feedbackForm">
                             <div class="field">
-                                <label class="label is-size-4">Имя</label>
+                                <label class="label is-size-4">ФИО <span class="has-text-danger"></span> </label>
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Ваше имя" required>
+                                    <input class="input" id="fullname" type="text" placeholder="Ваше ФИО" required>
                                 </div>
                             </div>
                             <div class="field">
                                 <label class="label is-size-4">Email</label>
                                 <div class="control">
-                                    <input class="input" type="email" placeholder="example@email.com" required>
+                                    <input class="input"  id="email" type="email" placeholder="example@email.com" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label is-size-4">Номер телефона</label>
+                                <div class="control">
+                                  <input class="input"  id="phone" type="tel" placeholder="+7-(xxx)-xxx-xx-xx" required>
                                 </div>
                             </div>
                             <div class="field">
                                 <label class="label is-size-4">Тема</label>
                                 <div class="control">
                                     <div class="select is-fullwidth">
-                                        <select required>
+                                        <select id="theme" >
                                             <option value="" disabled selected>Выберите тему</option>
                                             <option>Предложение по сотрудничеству</option>
                                             <option>Жалоба</option>
@@ -136,13 +144,13 @@
                             <div class="field">
                                 <label class="label is-size-4">Сообщение</label>
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Ваше сообщение..." rows="5" required></textarea>
+                                    <textarea class="textarea"  id="message" placeholder="Ваше сообщение..." rows="5" required></textarea>
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
                                     <label class="checkbox is-size-6">
-                                        <input type="checkbox" required> Соглашаюсь на обработку персональных данных
+                                        <input type="checkbox"> Соглашаюсь на обработку персональных данных
                                     </label>
                                 </div>
                             </div>
@@ -220,5 +228,7 @@
     </p>
   </div>
     </footer>
+    <script src="scripts/consoleLogger.js"></script>
+    <script src="scripts/validation.js"></script>
 </body>
 </html>
